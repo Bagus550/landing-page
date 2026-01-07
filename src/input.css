@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Pasang Font Google di paling atas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+
+@theme {
+  /* Di v4, kita kustomisasi langsung di dalam blok @theme */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  
+  --font-sans: "Inter", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  /* Warna Custom Berdasarkan Logo Biru Lo */
+  --color-primary: #0061FF;    /* Biru Utama (Sesuaikan sama kode hex logo lo) */
+  --color-secondary: #60EFFF;  /* Biru Muda buat aksen/gradient */
+  --color-dark: #0A192F;       /* Biru Gelap banget buat teks judul atau footer */
+  --color-surface: #F8FAFC;    /* Abu-abu kebiruan buat background */
+  --color-brand: #2563eb; 
+  --color-brand-light: #eff6ff;
+}
