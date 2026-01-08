@@ -1278,25 +1278,22 @@
       const overlay = document.getElementById("overlay");
       const sidebarLinks = document.querySelectorAll(".sidebar-link");
 
-      // Fungsi buat buka sidebar
       function openSidebar() {
         sidebar.classList.remove("-translate-x-full");
         overlay.classList.remove("hidden");
-        document.body.style.overflow = "hidden"; // Biar body nggak bisa di-scroll pas sidebar buka
+        document.body.style.overflow = "hidden";
       }
 
-      // Fungsi buat tutup sidebar
       function closeSidebar() {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
-        document.body.style.overflow = ""; // Balikin scroll body
+        document.body.style.overflow = "";
       }
 
       hamburgerBtn.addEventListener("click", openSidebar);
       closeBtn.addEventListener("click", closeSidebar);
       overlay.addEventListener("click", closeSidebar);
 
-      // Tutup sidebar kalau link-nya diklik (penting buat SPA/Anchor link)
       sidebarLinks.forEach((link) => {
         link.addEventListener("click", closeSidebar);
       });
