@@ -77,58 +77,58 @@
           </div>
         </div>
       </div>
+    </nav>
 
-      <div
-        id="sidebar"
-        class="fixed inset-y-0 left-0 z-50 w-72 transform bg-white shadow-2xl transition-transform duration-300 ease-in-out -translate-x-full md:hidden"
-      >
-        <div class="flex h-16 items-center justify-between px-6 border-b">
-          <span class="font-jakarta text-xl font-bold text-brand"
-            >Menu Utama</span
-          >
-          <button
-            id="close-btn"
-            class="text-gray-400 hover:text-red-500 text-3xl"
-          >
-            &times;
-          </button>
-        </div>
-        <div class="flex flex-col space-y-2 p-6">
+    <div
+      id="sidebar"
+      class="fixed inset-y-0 left-0 z-100 w-72 transform bg-white shadow-2xl transition-transform duration-300 ease-in-out -translate-x-full md:hidden"
+    >
+      <div class="flex h-16 items-center justify-between px-6 border-b">
+        <span class="font-jakarta text-xl font-bold text-brand"
+          >Menu Utama</span
+        >
+        <button
+          id="close-btn"
+          class="text-gray-400 hover:text-red-500 text-3xl"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="flex flex-col space-y-2 p-6">
+        <a
+          href="#home"
+          class="sidebar-link rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
+          >Home</a
+        >
+        <a
+          href="#services"
+          class="sidebar-link rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
+          >Services</a
+        >
+        <a
+          href="#portfolio"
+          class="sidebar-link rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
+          >Portfolio</a
+        >
+        <a
+          href="#testimoni"
+          class="sidebar-link rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
+          >Testimoni</a
+        >
+        <div class="pt-4">
           <a
-            href="#home"
-            class="rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
-            >Home</a
+            href="#contact"
+            class="sidebar-link flex justify-center bg-brand text-white py-4 rounded-xl font-bold"
+            >Contact Us</a
           >
-          <a
-            href="#services"
-            class="rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
-            >Services</a
-          >
-          <a
-            href="#portfolio"
-            class="rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
-            >Portfolio</a
-          >
-          <a
-            href="#testimoni"
-            class="rounded-xl px-4 py-3 text-base font-bold text-gray-700 hover:bg-brand-light hover:text-brand transition-all"
-            >Testimoni</a
-          >
-          <div class="pt-4">
-            <a
-              href="#contact"
-              class="flex justify-center bg-brand text-white py-4 rounded-xl font-bold"
-              >Contact Us</a
-            >
-          </div>
         </div>
       </div>
+    </div>
 
-      <div
-        id="overlay"
-        class="fixed inset-0 z-40 hidden bg-slate-900/40 backdrop-blur-sm transition-opacity md:hidden"
-      ></div>
-    </nav>
+    <div
+      id="overlay"
+      class="fixed inset-0 z-90 hidden bg-slate-900/40 backdrop-blur-sm transition-opacity md:hidden"
+    ></div>
 
     <main>
       <section
@@ -211,7 +211,7 @@
         </div>
       </section>
 
-      <section id="services" class="py-24 bg-surface">
+      <section id="services" class="pt-24 bg-surface">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2
@@ -322,6 +322,137 @@
           </div>
         </div>
       </section>
+      <section class="bg-surface py-20 px-6 font-sans">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+          <h2
+            class="font-jakarta text-4xl md:text-5xl font-extrabold text-dark mb-4"
+          >
+            Investasi Digital Terjangkau
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Solusi profesional untuk memperkuat kehadiran digital bisnis Anda
+            tanpa biaya tinggi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl shadow-blue-900/5 flex flex-col transition hover:scale-105"
+          >
+            <div class="mb-8">
+              <h3 class="font-jakarta text-2xl font-bold text-primary mb-2">
+                Starter
+              </h3>
+              <div class="text-4xl font-extrabold text-dark">Rp 850.000</div>
+            </div>
+
+            <ul class="space-y-4 mb-8 grow text-sm text-gray-700">
+              <li class="flex items-center">✓ Domain & Hosting (1 Tahun)</li>
+              <li class="flex items-center">✓ Landing Page (Single Page)</li>
+              <li class="flex items-center">✓ Desain Modern & Responsif</li>
+              <li class="flex items-center">✓ Sertifikat Keamanan SSL/HTTPS</li>
+              <li class="flex items-center">✓ Tombol WhatsApp & Sosmed</li>
+              <li class="flex items-center">✓ Maintenance (30 Hari)</li>
+              <li
+                class="font-semibold mt-4 text-dark border-t border-dashed pt-4"
+              >
+                Renewal Tahunan: Rp 500rb-an
+              </li>
+            </ul>
+
+            <button
+              class="w-full py-4 rounded-xl font-bold bg-gray-100 text-dark hover:bg-primary hover:text-white transition-colors"
+            >
+              Pilih Starter
+            </button>
+          </div>
+
+          <div
+            class="bg-primary rounded-3xl p-8 shadow-2xl shadow-primary/40 flex flex-col transform scale-105 relative z-10 border-4 border-white/20 transition hover:scale-110"
+          >
+            <div
+              class="absolute -top-5 left-1/2 -translate-x-1/2 bg-dark text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg"
+            >
+              Paling Populer
+            </div>
+
+            <div class="mb-8 text-center text-white">
+              <h3 class="font-jakarta text-2xl font-bold mb-2">Standard</h3>
+              <div class="text-4xl font-extrabold">Rp 1.750.000</div>
+              <div class="mt-2 text-xl opacity-90">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <ul class="space-y-4 mb-8 grow text-sm font-medium text-white/90">
+              <li class="flex items-center font-bold text-white">
+                ✓ Domain & Hosting (1 Tahun)
+              </li>
+              <li class="flex items-center">✓ Multi-Page (Up to 5 Halaman)</li>
+              <li class="flex items-center">✓ Setup SEO Google Dasar</li>
+              <li class="flex items-center">
+                ✓ Dashboard Admin (Bisa Edit Sendiri)
+              </li>
+              <li class="flex items-center">✓ Gratis 5 Artikel Bisnis</li>
+              <li class="flex items-center">✓ Optimalisasi Kecepatan Load</li>
+              <li class="flex items-center">✓ Maintenance (90 Hari)</li>
+              <li
+                class="font-extrabold mt-4 border-t border-white/20 pt-4 text-lg"
+              >
+                Renewal Tahunan: Rp 750rb-an
+              </li>
+            </ul>
+
+            <button
+              class="w-full py-4 rounded-xl font-bold bg-white text-primary hover:bg-dark hover:text-white transition-all shadow-xl"
+            >
+              Mulai Konsultasi
+            </button>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl shadow-blue-900/5 flex flex-col transition hover:scale-105"
+          >
+            <div class="mb-8">
+              <h3 class="font-jakarta text-2xl font-bold text-primary mb-2">
+                Professional
+              </h3>
+              <div class="text-4xl font-extrabold text-dark">Rp 3.500.000</div>
+            </div>
+
+            <ul class="space-y-4 mb-8 grow text-sm text-gray-700">
+              <li class="flex items-center">
+                ✓ Cloud Hosting High Performance
+              </li>
+              <li class="flex items-center">
+                ✓ Custom Design (Unlimited Page)
+              </li>
+              <li class="flex items-center font-bold text-primary">
+                ✓ Advanced SEO Management
+              </li>
+              <li class="flex items-center">✓ 10 Artikel Bisnis per Bulan</li>
+              <li class="flex items-center">
+                ✓ Email Bisnis Profesional (5 Akun)
+              </li>
+              <li class="flex items-center">
+                ✓ Integrasi Google Maps & Analytics
+              </li>
+              <li class="flex items-center font-bold text-green-600">
+                ✓ Maintenance Selamanya
+              </li>
+              <li
+                class="font-semibold mt-4 text-dark border-t border-dashed pt-4"
+              >
+                Renewal Tahunan: Rp 1jt-an
+              </li>
+            </ul>
+
+            <button
+              class="w-full py-4 rounded-xl font-bold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
+            >
+              Ambil Solusi Eksklusif
+            </button>
+          </div>
+        </div>
+      </section>
       <section id="how-to-order" class="py-24 bg-white overflow-hidden">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-20">
@@ -332,7 +463,8 @@
               <span class="text-brand">Kami</span>
             </h2>
             <p class="mt-4 text-lg text-gray-600 font-sans max-w-xl mx-auto">
-              Wujudkan kehadiran digital bisnis Anda melalui 4 langkah mudah dan terintegrasi.
+              Wujudkan kehadiran digital bisnis Anda melalui 4 langkah mudah dan
+              terintegrasi.
             </p>
           </div>
 
@@ -352,7 +484,8 @@
                   Konsultasi
                 </h3>
                 <p class="text-gray-500 text-sm leading-relaxed px-4">
-                  Konsultasikan kebutuhan spesifik bisnis Anda secara langsung melalui WhatsApp.
+                  Konsultasikan kebutuhan spesifik bisnis Anda secara langsung
+                  melalui WhatsApp.
                   <span class="text-brand font-bold">Gratis!</span>
                 </p>
               </div>
@@ -367,7 +500,8 @@
                   Deal & Kontrak
                 </h3>
                 <p class="text-gray-500 text-sm leading-relaxed px-4">
-                  Dapatkan penawaran harga yang kompetitif dan transparan. Jika setuju, proyek Anda akan segera kami eksekusi.
+                  Dapatkan penawaran harga yang kompetitif dan transparan. Jika
+                  setuju, proyek Anda akan segera kami eksekusi.
                 </p>
               </div>
 
@@ -381,7 +515,8 @@
                   Development
                 </h3>
                 <p class="text-gray-500 text-sm leading-relaxed px-4">
-                  Proyek Anda akan dikerjakan dengan dedikasi tinggi dan standar teknis terbaik oleh tim ahli kami.
+                  Proyek Anda akan dikerjakan dengan dedikasi tinggi dan standar
+                  teknis terbaik oleh tim ahli kami.
                 </p>
               </div>
 
@@ -395,7 +530,8 @@
                   Serah Terima
                 </h3>
                 <p class="text-gray-500 text-sm leading-relaxed px-4">
-                  Proyek selesai tepat waktu untuk mengakselerasi pertumbuhan bisnis Anda dan memaksimalkan potensi pendapatan.
+                  Proyek selesai tepat waktu untuk mengakselerasi pertumbuhan
+                  bisnis Anda dan memaksimalkan potensi pendapatan.
                 </p>
               </div>
             </div>
@@ -816,9 +952,11 @@
                 <span class="text-brand">Kolaborasi?</span>
               </h2>
               <p class="text-lg text-gray-600 mb-10 font-sans leading-relaxed">
-                Punya visi besar atau butuh solusi digital transformatif untuk bisnis Anda? Jangan ragu untuk mendiskusikannya dengan tim kami.
+                Punya visi besar atau butuh solusi digital transformatif untuk
+                bisnis Anda? Jangan ragu untuk mendiskusikannya dengan tim kami.
                 <span class="font-bold text-dark">BagusDev</span>
-                berkomitmen mentransformasi visi Anda menjadi solusi digital yang nyata dan presisi.
+                berkomitmen mentransformasi visi Anda menjadi solusi digital
+                yang nyata dan presisi.
               </p>
 
               <div class="space-y-8">
@@ -1002,7 +1140,9 @@
               BAGUS<span class="text-brand">DEV.</span>
             </div>
             <p class="text-sm leading-relaxed font-sans">
-              Hadirkan website profesional tanpa hambatan. Solusi digital strategis bagi Anda yang ingin meningkatkan performa bisnis dan daya saing di ekosistem digital.
+              Hadirkan website profesional tanpa hambatan. Solusi digital
+              strategis bagi Anda yang ingin meningkatkan performa bisnis dan
+              daya saing di ekosistem digital.
             </p>
             <div class="flex space-x-4">
               <a
@@ -1136,23 +1276,30 @@
       const closeBtn = document.getElementById("close-btn");
       const sidebar = document.getElementById("sidebar");
       const overlay = document.getElementById("overlay");
+      const sidebarLinks = document.querySelectorAll(".sidebar-link");
 
-      // Fungsi buka menu
-      hamburgerBtn.addEventListener("click", () => {
+      // Fungsi buat buka sidebar
+      function openSidebar() {
         sidebar.classList.remove("-translate-x-full");
-        sidebar.classList.add("translate-x-0");
         overlay.classList.remove("hidden");
-      });
+        document.body.style.overflow = "hidden"; // Biar body nggak bisa di-scroll pas sidebar buka
+      }
 
-      // Fungsi tutup menu
-      const closeMenu = () => {
-        sidebar.classList.remove("translate-x-0");
+      // Fungsi buat tutup sidebar
+      function closeSidebar() {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
-      };
+        document.body.style.overflow = ""; // Balikin scroll body
+      }
 
-      closeBtn.addEventListener("click", closeMenu);
-      overlay.addEventListener("click", closeMenu);
+      hamburgerBtn.addEventListener("click", openSidebar);
+      closeBtn.addEventListener("click", closeSidebar);
+      overlay.addEventListener("click", closeSidebar);
+
+      // Tutup sidebar kalau link-nya diklik (penting buat SPA/Anchor link)
+      sidebarLinks.forEach((link) => {
+        link.addEventListener("click", closeSidebar);
+      });
     </script>
   </body>
 </html>
